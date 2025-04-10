@@ -1,4 +1,3 @@
-// controllers/billing_history_controller.dart
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../Model/BillingRecord.dart';
@@ -31,7 +30,7 @@ class BillingHistoryController extends GetxController {
 
   Future<void> addRecord(BillingRecord record) async {
     final prefs = await SharedPreferences.getInstance();
-    allRecords.insert(0, record); // newest first
+    allRecords.insert(0, record); 
     await prefs.setString('billing_history', BillingRecord.encode(allRecords));
     applyFilters();
   }

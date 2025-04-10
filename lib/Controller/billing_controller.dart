@@ -1,4 +1,3 @@
-// controllers/billing_controller.dart
 import 'package:get/get.dart';
 import '../Model/bill_model.dart';
 import '../Model/product_model.dart';

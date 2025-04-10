@@ -1,4 +1,3 @@
-// models/bill_model.dart
 import 'product_model.dart';
 
 class BillItem {
